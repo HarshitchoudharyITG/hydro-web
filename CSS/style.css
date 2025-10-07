@@ -129,6 +129,11 @@ a.link.link4 {
     height: 71px;
     width: 100%;
 }
+.header-bar {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
 .fa-angle-down:before {
     content: "\f107";
     font-size: 21px;
@@ -173,15 +178,17 @@ a.link.link4 {
 
 .swiper-button-next:after, .swiper-button-prev:after {
     background: var(--button-color-forgrade-Third);
-    font-size: 24px;
-    padding: 10px 15px;
+    font-size: var(--paragraph-text-font-size);
+    padding: 14px 16px;
     border-radius: 45px;
     color: var(--button-color-forgrade-fifth);
+    font-weight: var(--font-wight-first);
 }
 
 .swiper-button-next, .swiper-button-prev {
     position: absolute;
-    width: calc(var(--swiper-navigation-size)/ 15 * 27);
+    width: calc(var(--swiper-navigation-size)/ 20 * 27);
+    
   
 
 }
