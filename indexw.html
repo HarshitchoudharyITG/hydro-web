@@ -3,49 +3,48 @@
 <head> <meta charset="UTF-8">
 <title>Perfect Continuous Marquee</title>
 <style>
- /* --- Container Styles --- */
+
  .marquee-container {
   width: 100%;
   overflow: hidden;
   position: relative;
   background: #eee;
-  /* Add a border for visual clarity */
+
   border: 1px solid #ccc;
   padding: 5px 0;
  }
- /* --- Content Styles --- */
  .marquee-content {
   display: flex;
-  /* The total width will be the content's natural width, plus its duplicated copy */
+
   width: max-content;
-  /* Adjust duration for desired speed */
+
   animation: marquee 15s linear infinite;
  }
- /* Pause on Hover */
+
  .marquee-container:hover .marquee-content {
   animation-play-state: paused;
  }
 
- /* --- Keyframe Animation --- */
+ 
  @keyframes marquee {
-  0% {
-   /* Start at the original position */
-   transform: translateX(0);
-  }
   100% {
-   /* Translate exactly half the total width (the width of the original content) */
-   transform: translateX(-50%);
+ 
+   transform: translateX(-100%);
+  }
+  0% {
+  
+   transform: translateX(0%);
   }
  }
- /* --- Text Grouping and Spacing --- */
+
  .text-group {
- /* This div holds one complete set of content */
+ 
  display: flex;
  }
  .text-group span {
-  /* Add consistent spacing between phrases */
-  padding: 0 40px; /* Example: 40px gap between each span */
-  white-space: nowrap; /* Prevent text from wrapping */
+ 
+  padding: 0 40px; 
+  white-space: nowrap; 
   font-family: sans-serif;
   font-size: 1.2em;
   font-weight: bold;
@@ -56,22 +55,21 @@
 <body>
 
 <div class="marquee-container">
-  <div class="marquee-content">
-          <div class="text-group">
-      <span>🚀 This is a seamless scrolling marquee.</span>
-      <span>💡 Here's the second unique item.</span>
-      <span>✨ Don't forget the third item.</span>
-      <span>⭐ New updates are scrolling now!</span>
-    </div>
-
-          <div class="text-group">
-      <span>🟢 This is a seamless scrolling marquee.</span>
-      <span>☠️ Here's the second unique item.</span>
-      <span>✨ Don't forget the third item.</span>
-      <span>⭐ New updates are scrolling now!</span>
-    </div>
-  </div>
+<div class="marquee-content">
+  <div class="text-group">
+ <span>🚀 This is a seamless scrolling marquee.</span>
+ <span>💡 Here's the second unique item.</span>
+ <span>✨ Don't forget the third item.</span>
+ <span>⭐ New updates are scrolling now!</span>
+ 
+  <div class="text-group">
+ <span>🟢 This is a seamless scrolling marquee.</span>
+ <span>☠️ Here's the second unique item.</span>
+ <span>✨ Don't forget the third item.</span>
+ <span>⭐ New updates are scrolling now!</span>
+ </div>
+ </div>
 </div>
-
+</div>
 </body>
 </html>
