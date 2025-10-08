@@ -110,6 +110,7 @@ nav.nav-bar {
 }
 .link1:hover,.link2:hover,.link5:hover{
     color: var(--text-color-forgrade-First);
+    text-decoration: underline;
 }
 .link2 {
     display: flex;
