@@ -51,6 +51,7 @@ body {
     /*Font-size*/
     --font-size-small: 14px;
     --paragraph-text-font-size: 16px;
+    --heading-text-mediem-font-size:19.2px;
     --heading-text-font-size: 33.18px;
 }
 
@@ -309,3 +310,44 @@ h2 {
     letter-spacing: 0.3px;
     font-weight: 600;
 }
+
+.footer-content {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    gap: 6%;
+    background-color: var(--background-color-forgrade-Seventh);
+    padding: 93px 50px;
+}
+.footer-icon {
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+}
+h5{
+    font-size: var(--heading-text-mediem-font-size);
+    font-family: var(--heading-font-family);
+    color: var(--text-color-forgrade-Third);
+}
+
+ul.footer-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer-link {
+    color: var(--text-color-forgrade-Third);
+    font-size: var(--font-size-small);
+    font-family: var(--body-font-family);
+}
+
+.disclamer-inner {
+    display: flex;
+    background: var(--background-color-forgrade-Seventh);
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 50px 30px;
+}
+
+
